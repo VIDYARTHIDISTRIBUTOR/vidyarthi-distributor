@@ -1,4 +1,0 @@
-function toggleMenu(){document.getElementById("navMenu").classList.toggle("show");}
-document.querySelectorAll("#navMenu a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navMenu").classList.remove("show")));
-document.getElementById("year").textContent=new Date().getFullYear();
-function sendMessage(event){event.preventDefault();const name=document.getElementById("name").value;const phone=document.getElementById("phone").value;const message=document.getElementById("message").value;const text=`Hello Vidyarthi Distributor,\nName: ${name}\nMobile: ${phone}\nRequirement: ${message}`;window.open("https://wa.me/917722869626?text="+encodeURIComponent(text),"_blank");event.target.reset();}
